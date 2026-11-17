@@ -1,0 +1,2008 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+    style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+    img-src 'self' data:;
+    font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;
+    connect-src 'self';
+  ">
+
+  <title>Piola Burguer Café | Hamburguesas, Tostas y Café de Especialidad en Málaga</title>
+  <meta name="description" content="Descubre Piola Burguer Café en Málaga. Disfruta de nuestras hamburguesas artesanales, tostas gourmet y café de especialidad. Un ambiente 'piola' para desayunos y almuerzos. ¡Visítanos!">
+  <meta name="keywords" content="hamburguesas, café, Málaga, comida, restaurante, cafetería, gourmet, artesanal, tostas, desayunos, almuerzos, Piola Burguer Café, Piola, tapas, entrantes, montados, camperos, restaurante en Málaga, comer en Málaga">
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Piola Burguer Café",
+      "description": "Piola Burguer Café ofrece una experiencia única con hamburguesas artesanales, tostas gourmet, especialidades de café y un ambiente acogedor. Ubicados en Málaga, somos el lugar perfecto para un desayuno, almuerzo o cena.",
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Menú Completo de Piola Burguer Café",
+        "description": "Nuestra carta incluye hamburguesas, tostas gourmet, tapas, montados, camperos, ensaladas y bebidas."
+      },
+      "telephone": "+34951468972",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C. Villafuerte, 42",
+        "addressLocality": "Málaga",
+        "postalCode": "29017",
+        "addressRegion": "Málaga",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.721245,
+        "longitude": -4.421526
+      },
+      "servesCuisine": ["Hamburguesas", "Tapas", "Comida Rápida Gourmet", "Café"],
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "08:30",
+          "closes": "13:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "19:30",
+          "closes": "22:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "08:30",
+          "closes": "13:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "20:00",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "20:00",
+          "closes": "23:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/piolaburguercafe",
+        "https://www.instagram.com/piolaburguercafe?igsh=NXlsdmo0amtvcTFj",
+        "https://www.tiktok.com/@piolacafeburguer?_t=ZN-8wqM0MgRBvK&_r=1"
+      ]
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Estilos CSS (sin cambios importantes, ya estaban optimizados) */
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap');
+    :root {
+      --primary-color: #6F4E37;
+      --secondary-color: #8B4513;
+      --accent-color: #D2B48C;
+      --light-bg: #F5F5DC;
+      --dark-text: #36221A;
+      --light-text: #fff;
+      --gray-text: #5A4A42;
+      --shadow: 0 4px 6px rgba(0,0,0,0.1);
+      --transition: all 0.3s ease;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--light-text);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    header h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+      letter-spacing: 2px;
+      position: relative;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      position: relative;
+      font-weight: 300;
+    }
+    nav {
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      transition: var(--transition);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: var(--transition);
+    }
+    .menu-toggle:hover {
+      background-color: var(--accent-color);
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      width: 100%;
+    }
+    nav a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.4rem 0.8rem;
+      border-radius: 25px;
+      transition: var(--transition);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+    nav a:hover {
+      background-color: var(--primary-color);
+      color: white;
+      transform: translateY(-2px);
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 80vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--light-text);
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(transparent, var(--light-bg));
+    }
+    .hero-content {
+      max-width: 800px;
+      padding: 0 2rem;
+      animation: fadeInUp 1s ease-out;
+    }
+    .hero-content h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-shadow: 4px 4px 8px rgba(0,0,0,0.8);
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+    .hero-content p {
+      font-size: 1.3rem;
+      margin-bottom: 2.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      font-weight: 300;
+    }
+    .cta-button {
+      background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+      color: var(--light-text);
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(165, 42, 42, 0.3);
+    }
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(165, 42, 42, 0.4);
+      background: linear-gradient(45deg, var(--accent-color), var(--primary-color));
+    }
+    section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.8rem;
+      color: var(--primary-color);
+      margin-bottom: 3rem;
+      position: relative;
+      font-weight: 700;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 4px;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      margin: 1.5rem auto;
+      border-radius: 2px;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.5rem;
+      margin-top: 3rem;
+    }
+    .menu-item {
+      background: white;
+      padding: 2.5rem 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      transition: var(--transition);
+      border: 1px solid rgba(210, 105, 30, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    .menu-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+      transition: var(--transition);
+    }
+    .menu-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    }
+    .menu-item:hover::before {
+      width: 8px;
+    }
+    .menu-item h3 {
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .menu-item .price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: var(--secondary-color);
+      float: right;
+      background: rgba(210, 105, 30, 0.1);
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+    }
+    .menu-item .description {
+      color: var(--gray-text);
+      margin-bottom: 1rem;
+      clear: both;
+      font-weight: 300;
+    }
+    .menu-item .item-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .menu-item .item-image:hover {
+        transform: scale(1.03);
+    }
+    .menu-category {
+      margin-top: 5rem;
+    }
+    .menu-category h3 {
+      font-size: 2rem;
+      color: var(--secondary-color);
+      margin-bottom: 2rem;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0 2rem;
+    }
+    .menu-category h3::before,
+    .menu-category h3::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 50px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--secondary-color), transparent);
+    }
+    .menu-category h3::before {
+      left: -50px;
+    }
+    .menu-category h3::after {
+      right: -50px;
+      background: linear-gradient(90deg, transparent, var(--secondary-color));
+    }
+    .about {
+      background: white;
+      border-radius: 20px;
+      padding: 4rem;
+      margin: 5rem auto;
+      text-align: center;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .about::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    }
+    .about p {
+      font-size: 1.1rem;
+      color: var(--gray-text);
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 3rem;
+      margin-top: 5rem;
+    }
+    .feature {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+      transition: var(--transition);
+      position: relative;
+    }
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+    .feature-icon {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--secondary-color);
+    }
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+    .feature p {
+      color: var(--gray-text);
+      font-weight: 300;
+    }
+    .review-section {
+      background: white;
+      border-radius: 20px;
+      padding: 4rem;
+      margin: 5rem auto;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .review-section .section-title {
+      cursor: pointer;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    .review-section .section-title i {
+      transition: transform 0.3s ease;
+    }
+    .review-section .section-title.collapsed i {
+      transform: rotate(-90deg);
+    }
+    .review-section-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.7s ease-out, opacity 0.7s ease-out;
+      opacity: 0;
+      padding-top: 0;
+    }
+    .review-section-content.expanded {
+      max-height: 1000px;
+      opacity: 1;
+      padding-top: 2rem;
+    }
+    .review-section p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--gray-text);
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+    }
+    .review-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 600px;
+      margin: 2rem auto 0;
+      text-align: left;
+    }
+    .review-section label {
+      font-weight: 600;
+      color: var(--dark-text);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .review-section input[type="text"],
+    .review-section input[type="email"],
+    .review-section textarea,
+    .review-section select,
+    .review-section input[type="file"] {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid var(--accent-color);
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      color: var(--dark-text);
+      background-color: var(--light-bg);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .review-section input[type="text"]:focus,
+    .review-section input[type="email"]:focus,
+    .review-section textarea:focus,
+    .review-section select:focus,
+    .review-section input[type="file"]:focus {
+      border-color: var(--secondary-color);
+      box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.2);
+      outline: none;
+    }
+    .review-section textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .review-section input[type="submit"] {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: var(--light-text);
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(111, 78, 55, 0.3);
+    }
+    .review-section input[type="submit"]:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(111, 78, 55, 0.4);
+      background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    }
+    .work-with-us {
+      background: white;
+      border-radius: 20px;
+      padding: 4rem;
+      margin: 5rem auto;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .work-with-us .section-title {
+      cursor: pointer;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    .work-with-us .section-title i {
+      transition: transform 0.3s ease;
+    }
+    .work-with-us .section-title.collapsed i {
+      transform: rotate(-90deg);
+    }
+    .work-with-us-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.7s ease-out, opacity 0.7s ease-out;
+      opacity: 0;
+      padding-top: 0;
+    }
+    .work-with-us-content.expanded {
+      max-height: 1000px;
+      opacity: 1;
+      padding-top: 2rem;
+    }
+    .work-with-us p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--gray-text);
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+    }
+    .work-with-us form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 600px;
+      margin: 2rem auto 0;
+      text-align: left;
+    }
+    .work-with-us label {
+      font-weight: 600;
+      color: var(--dark-text);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .work-with-us input[type="text"],
+    .work-with-us input[type="email"],
+    .work-with-us input[type="tel"],
+    .work-with-us textarea,
+    .work-with-us input[type="file"] {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid var(--accent-color);
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      color: var(--dark-text);
+      background-color: var(--light-bg);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .work-with-us input[type="text"]:focus,
+    .work-with-us input[type="email"]:focus,
+    .work-with-us input[type="tel"]:focus,
+    .work-with-us textarea:focus {
+      border-color: var(--secondary-color);
+      box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.2);
+      outline: none;
+    }
+    .work-with-us textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .work-with-us input[type="submit"] {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: var(--light-text);
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(111, 78, 55, 0.3);
+    }
+    .work-with-us input[type="submit"]:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(111, 78, 55, 0.4);
+      background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    }
+    .contact {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--light-text);
+      border-radius: 20px;
+      text-align: center;
+      padding: 4rem 2rem;
+      margin-top: 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .contact .section-title {
+      color: var(--light-text);
+      position: relative;
+    }
+    .contact .section-title::after {
+      background: rgba(255,255,255,0.5);
+    }
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-top: 3rem;
+      position: relative;
+    }
+    .contact-item {
+      background: rgba(255,255,255,0.1);
+      padding: 2rem;
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+      transition: var(--transition);
+    }
+    .contact-item:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.15);
+    }
+    .contact-item h4 {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .contact-item p {
+      font-weight: 300;
+      opacity: 0.9;
+    }
+    .contact-item i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+    .contact .cta-button {
+        margin-top: 3rem;
+        background: var(--light-text);
+        color: var(--primary-color);
+        box-shadow: 0 4px 15px rgba(255,255,255,0.3);
+    }
+    .contact .cta-button:hover {
+        background: var(--light-bg);
+        color: var(--secondary-color);
+        box-shadow: 0 8px 25px rgba(255,255,255,0.4);
+    }
+    .map-container {
+      margin-top: 4rem;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      height: 400px;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    footer {
+      background: linear-gradient(135deg, #222, #444);
+      color: var(--light-text);
+      text-align: center;
+      padding: 4rem 2rem;
+      margin-top: 5rem;
+      position: relative;
+    }
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    }
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      text-align: left;
+    }
+    .footer-column h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: var(--light-text);
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    .footer-column h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 2px;
+      background: var(--secondary-color);
+    }
+    .footer-column p, .footer-column a {
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 1rem;
+      display: block;
+      font-weight: 300;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+    .footer-column a:hover {
+      color: var(--light-text);
+      padding-left: 5px;
+    }
+    .social-links {
+      margin: 2rem 0;
+    }
+    .social-links a {
+      color: var(--light-text);
+      font-size: 1.5rem;
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: var(--transition);
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+    }
+    .social-links a:hover {
+      background: var(--secondary-color);
+      transform: translateY(-3px);
+    }
+    .copyright {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .initial-hidden {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .animate-visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+    .hidden-gift-icon {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      font-size: 0.8rem;
+      color: var(--gray-text);
+      opacity: 0.2;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+    .hidden-gift-icon:hover {
+      font-size: 2.5rem;
+      opacity: 1;
+      color: var(--secondary-color);
+      transform: scale(1.2);
+    }
+    .prize-cups-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      z-index: 999;
+      animation: fadeIn 0.3s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .cup-choice {
+      font-size: 3rem;
+      color: var(--primary-color);
+      cursor: pointer;
+      transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: var(--light-bg);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .cup-choice:hover {
+      transform: translateY(-5px) scale(1.1);
+      color: var(--secondary-color);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .discount-message {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--primary-color);
+      color: var(--light-text);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: none;
+      text-align: center;
+      font-size: 1.2rem;
+      max-width: 80%;
+      animation: fadeInScale 0.5s ease-out forwards;
+    }
+    .discount-message.show {
+      display: block;
+    }
+    .discount-message button {
+      background-color: var(--accent-color);
+      color: var(--primary-color);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      transition: var(--transition);
+    }
+    .discount-message button:hover {
+      background-color: #f0c29a;
+      transform: translateY(-2px);
+    }
+    @keyframes fadeInScale {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+    @media (max-width: 992px) {
+      .hero-content h2 {
+        font-size: 3.5rem;
+      }
+      section {
+        padding: 4rem 1.5rem;
+      }
+      .menu-toggle {
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding-right: 2rem;
+      }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 0.5rem;
+        padding-top: 1rem;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      nav {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0.5rem 0;
+      }
+      nav a {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+    @media (max-width: 768px) {
+      .hero {
+        height: 70vh;
+        min-height: 500px;
+        background-attachment: scroll;
+      }
+      .hero-content h2 {
+        font-size: 2.8rem;
+      }
+      .hero-content p {
+        font-size: 1.1rem;
+      }
+      .section-title {
+        font-size: 2.2rem;
+      }
+      .about {
+        padding: 3rem 1.5rem;
+        margin: 5rem auto;
+        box-shadow: var(--shadow);
+      }
+      .about::before {
+        height: 10px;
+      }
+      .menu-item {
+        padding: 2rem 1.5rem;
+      }
+      .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .footer-column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .hero-content h2 {
+        font-size: 2.2rem;
+      }
+      .cta-button {
+        padding: 0.8rem 1.8rem;
+        font-size: 1rem;
+      }
+      .section-title {
+        font-size: 1.8rem;
+      }
+      .menu {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Piola Burguer Café</h1>
+    <p>Experiencia gourmet en cada bocado</p>
+  </header>
+
+  <nav>
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-links">
+      <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+      <a href="#nosotros"><i class="fas fa-info-circle"></i> Nosotros</a>
+      <a href="#menu"><i class="fas fa-utensils"></i> Menú</a>
+      <a href="#trabaja-con-nosotros"><i class="fas fa-briefcase"></i> Trabaja con Nosotros</a>
+      <a href="#reseñas"><i class="fas fa-star"></i> Reseñas</a>
+      <a href="#contacto"><i class="fas fa-map-marker-alt"></i> Contacto</a>
+    </div>
+  </nav>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h2>Sabores que inspiran</h2>
+      <p>Descubre nuestra selección de hamburguesas artesanales, tostas gourmet y café de especialidad en el corazón de Málaga</p>
+      <a href="#menu" class="cta-button">Explorar Menú</a>
+    </div>
+  </section>
+
+  <section id="nosotros" class="about">
+    <h2 class="section-title">Nuestra Esencia "Piola"</h2>
+    <p>En el lunfardo argentino, la palabra “piola” tiene un valor emocional muy potente. Va más allá de lo simpático o lo cool. Ser piola es ser buena onda, auténtico, cercano, creativo, con chispa, con carisma. Es una persona que cae bien, que tiene estilo, pero sin pretensiones. Es un lugar donde te sentís cómodo, relajado, como en casa, pero con un plus.</p>
+    
+    <p>Y ese es el punto clave: el alma de Piola ya está en el nombre, pero aún no se ha contado.</p>
+    
+    <p>Piola no es solo una palabra, es una experiencia.</p>
+    
+    <p>Una experiencia que puede convertirse en una comunidad de clientes fieles, que no solo van a comer o desayñar, sino a sentirse identificados con una forma de ser y de vivir.</p>
+    
+    <div class="features">
+      <div class="feature initial-hidden">
+        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+        <h3>Ingredientes Frescos</h3>
+        <p>Trabajamos directamente con productores locales para garantizar la máxima frescura y calidad en cada ingrediente.</p>
+      </div>
+      
+      <div class="feature initial-hidden">
+        <div class="feature-icon"><i class="fas fa-heart"></i></div>
+        <h3>Hecho con Pasión</h3>
+        <p>Cada plato es preparado artesanalmente con atención al detalle y amor por la buena cocina.</p>
+      </div>
+      
+      <div class="feature initial-hidden">
+        <div class="feature-icon"><i class="fas fa-award"></i></div>
+        <h3>Ambiente Piola</h3>
+        <p>Un espacio donde la buena onda y el carisma se encuentran con sabores únicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <p style="text-align: center; font-size: 1.1rem; color: var(--gray-text); margin-bottom: 1rem;">Ten el ojo bien abierto y encuentra nuestro regalo en nuestra carta</p>
+    <h2 class="section-title">Nuestra Carta</h2>
+    
+    <div class="menu-category">
+      <h3>Hamburguesas</h3>
+    </div>
+    <div class="menu">
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-burger"></i> Hamburguesa Sola</h3>
+        <span class="price">4,20€</span>
+        <p class="description">Pan brioche, ternera 80grs, ketchup y mayonesa.</p>
+      </div>
+      
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bacon"></i> Bacongqueso</h3>
+        <span class="price">4,90€</span>
+        <p class="description">Pan brioche, ternera 80grs, queso cheddar, bacon, ketchup y mayonesa.</p>
+      </div>
+
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-cheese"></i> Completa</h3>
+        <span class="price">5,00€</span>
+        <p class="description">Pan brioche, ternera 80grs, queso cheddar, lechuga, tomate, cebolla, mayonesa y ketchup.</p>
+      </div>
+
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-cow"></i> De Buey</h3>
+        <span class="price">7,80€</span>
+        <p class="description">Pan brioche, buey 200grs, cheddar, lechuga, tomate, cebolla, mayonesa y ketchup.</p>
+      </div>
+
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-drumstick-bite"></i> Fachera</h3>
+        <span class="price">7,50€</span>
+        <p class="description">Pan brioche, burguer pollo crujiente, bacon, lechuga, tomate y mayonesa.</p>
+      </div>
+
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-burger"></i> Doble Crush</h3>
+        <span class="price">8,50€</span>
+        <p class="description">Pan brioche, doble ternera 80grs, doble queso cheddar, bacon, huevo, cebolla crispy y salsa burguer.</p>
+      </div>
+
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-cheese"></i> Re Piola</h3>
+        <span class="price">9,50€</span>
+        <p class="description">Pan brioche, buey 200grs, queso de cabra, cebolla caramelizada, bacon y mermelada de fresa.</p>
+      </div>
+
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-egg"></i> Suprema</h3>
+        <span class="price">10,50€</span>
+        <p class="description">Pan brioche, buey 200grs, cheddar, bacon, jamón cocido, huevo, cebolla caramelizada y salsa barbacoa.</p>
+      </div>
+
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-hat-cowboy"></i> Texana</h3>
+        <span class="price">11,00€</span>
+        <p class="description">Pan brioche, buey 200grs, cheddar, bacon, aros de cebolla y salsa burguer.</p>
+      </div>
+
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-piggy-bank"></i> Pulled Pork</h3>
+        <span class="price">12,50€</span>
+        <p class="description">Pan brioche, buey 200grs, doble cheddar, bacon, pulled pork, cebolla caramelizada y alioli.</p>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Picar</h3>
+    </div>
+    <div class="menu">
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-drumstick-bite"></i> Croqueta Cocido</h3>
+        <span class="price">4,20€/8,00€</span>
+        <p class="description">3 o 6 croquetas más patatas fritas.</p>
+      </div>
+      
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-utensils"></i> Croqueta Toro</h3>
+        <span class="price">4,70€/8,70€</span>
+        <p class="description">3 o 6 croquetas más patatas fritas.</p>
+      </div>
+
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-shrimp"></i> Croqueta Gamba Ajillo</h3>
+        <span class="price">4,90€/8,90€</span>
+        <p class="description">3 o 6 croquetas más patatas fritas.</p>
+      </div>
+      
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-french-fries"></i> Patatas Fritas</h3>
+        <span class="price">3,20€/5,50€</span>
+        <p class="description">Patatas fritas.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-garlic"></i> Patatas Alioli</h3>
+        <span class="price">3,70€/6,70€</span>
+        <p class="description">Patatas fritas con alioli.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-pepper-hot"></i> Patatas Bravas</h3>
+        <span class="price">4,20€/7,50€</span>
+        <p class="description">Patatas fritas con salsa brava.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-piggy-bank"></i> Patatas Pulled Pork</h3>
+        <span class="price">8,00€</span>
+        <p class="description">Patatas cubiertas con carne deshilachada.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-chicken"></i> Nuggets de Pollo</h3>
+        <span class="price">5,00€/7,00€</span>
+        <p class="description">6 o 12 nuggets de pollo más patatas fritas.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-drumstick-bite"></i> Alitas de Pollo</h3>
+        <span class="price">5,50€/8,50€</span>
+        <p class="description">5 o 10 alitas de pollo más patatas fritas.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-pepper-hot"></i> Pinchito de Pollo</h3>
+        <span class="price">7,50€</span>
+        <p class="description">3 pinchitos de pollo más patatas fritas y ensalada.</p>
+      </div>
+    </div>
+    
+    <div class="menu-category">
+      <h3>Montaditos</h3>
+    </div>
+    <div class="menu">
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Lomi</h3>
+        <span class="price">2,20€</span>
+        <p class="description">Cinta de lomo y alioli.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Pikolino</h3>
+        <span class="price">2,20€</span>
+        <p class="description">Lomo adobado, tomate y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bacon"></i> Bacon</h3>
+        <span class="price">2,00€</span>
+        <p class="description">Bacon y queso.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Piolita</h3>
+        <span class="price">2,50€</span>
+        <p class="description">Bacon, queso, pollo y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Simba</h3>
+        <span class="price">2,50€</span>
+        <p class="description">Lomo adobado, huevo, pimiento y alioli.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-sausage"></i> Chori-pan</h3>
+        <span class="price">2,50€</span>
+        <p class="description">Chorizo criollo con salsa chimichurri.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bacon"></i> Puky</h3>
+        <span class="price">2,50€</span>
+        <p class="description">Lomo adobado, huevo, bacon, queso y alioli.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-cheese"></i> Gody</h3>
+        <span class="price">2,50€</span>
+        <p class="description">Cerdo, queso manchego, pimiento y alioli.</p>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Perritos Calientes</h3>
+    </div>
+    <div class="menu">
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-hotdog"></i> Clásico</h3>
+        <span class="price">4,00€</span>
+        <p class="description">Salchicha, ketchup, mayonesa y mostaza.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-hotdog"></i> Completo</h3>
+        <span class="price">4,50€</span>
+        <p class="description">Salchicha, ketchup, tomate, lechuga, cebolla, mayonesa y mostaza.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-hotdog"></i> Bacon & Crispy</h3>
+        <span class="price">4,90€</span>
+        <p class="description">Salchicha, bacon, cebolla crispy y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-hotdog"></i> Cabra Dog</h3>
+        <span class="price">6,00€</span>
+        <p class="description">Salchicha, bacon, queso de cabra, cebolla caramelizada, mayonesa y mostaza.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-hotdog"></i> Pulled Dog</h3>
+        <span class="price">6,50€</span>
+        <p class="description">Salchicha, pulled pork, cebolla crispy, mayonesa y barbacoa.</p>
+      </div>
+    </div>
+    
+    <div class="menu-category">
+      <h3>Camperos Básicos</h3>
+    </div>
+    <div class="menu">
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-sandwich"></i> Sencillo</h3>
+        <span class="price">4,00€</span>
+        <p class="description">Jamón cocido, queso edam, lechuga, tomate y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-sandwich"></i> Montadito</h3>
+        <span class="price">4,50€</span>
+        <p class="description">Lomo adobado, queso edam, lechuga, tomate y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bacon"></i> Bacon</h3>
+        <span class="price">4,50€</span>
+        <p class="description">Bacon, queso edam, lechuga, tomate y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-fish"></i> Atún</h3>
+        <span class="price">5,00€</span>
+        <p class="description">Atún, lechuga, tomate y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-chicken"></i> Pollo</h3>
+        <span class="price">5,50€</span>
+        <p class="description">Pollo, jamón cocido, queso edam, lechuga, tomate y mayonesa.</p>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Camperos Especiales</h3>
+    </div>
+    <div class="menu">
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-leaf"></i> Vegetariano</h3>
+        <span class="price">5,00€</span>
+        <p class="description">Tortilla francesa, pimiento, cebolla, lechuga, tomate y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bacon"></i> Bacon Especial</h3>
+        <span class="price">5,30€</span>
+        <p class="description">Bacon, huevo, cebolla caramelizada, lechuga, tomate y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-sandwich"></i> Copado</h3>
+        <span class="price">5,50€</span>
+        <p class="description">Tortilla francesa, bacon, queso edam, lechuga, tomate y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-pepper-hot"></i> Serranito</h3>
+        <span class="price">5,70€</span>
+        <p class="description">Pollo/cerdo, jamón serrano, tomate, pimientos y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-sandwich"></i> Tiki</h3>
+        <span class="price">5,80€</span>
+        <p class="description">Tortilla francesa, lomo adobado, bacon, queso Edam, lechuga, tomate y alioli.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-cheese"></i> Molon</h3>
+        <span class="price">5,80€</span>
+        <p class="description">Lomo adobado, bacon, queso manchego, queso edam, lechuga, tomate y alioli.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-football"></i> Messi</h3>
+        <span class="price">6,00€</span>
+        <p class="description">Pollo empanado, jamón cocido, queso edam, huevo, tomate y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-sandwich"></i> Macanudo</h3>
+        <span class="price">6,10€</span>
+        <p class="description">Lomo de cerdo aliñado, queso edam, bacon, huevo, lechuga, tomate y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-sandwich"></i> Canchero</h3>
+        <span class="price">6,10€</span>
+        <p class="description">Pollo, bacon, jamón cocido, queso edam, huevo, lechuga, tomate y mayonesa.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-star"></i> Capitano</h3>
+        <span class="price">6,90€</span>
+        <p class="description">Pollo, doble de bacon, doble queso edam, lomo adobado, huevo, cebolla caramelizada y alioli.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-fire"></i> Mucha-Mecha</h3>
+        <span class="price">8,50€</span>
+        <p class="description">Carne deshilachada (pulled pork), doble burguer ternera, bacon, cebolla caramelizada, queso edam, y alioli.</p>
+      </div>
+    </div>
+    
+    <div class="menu-category">
+      <h3>Tostas</h3>
+    </div>
+    <div class="menu">
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-fish"></i> Tosta Salmón</h3>
+        <span class="price">3,80€</span>
+        <p class="description">Tosta con salmón.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-fish"></i> Tosta Salmón Plus</h3>
+        <span class="price">4,80€</span>
+        <p class="description">Tosta con salmón, aguacate, philadelphia y chía.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-seedling"></i> Tosta Aguacate</h3>
+        <span class="price">3,60€</span>
+        <p class="description">Tosta con aguacate, philadelphia y chía.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-seedling"></i> Tosta Aguacate Plus</h3>
+        <span class="price">4,30€</span>
+        <p class="description">Tosta con aguacate, pavo, philadelphia y chía.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-cheese"></i> Tosta Piola</h3>
+        <span class="price">4,10€</span>
+        <p class="description">Tosta con queso blanco, aguacate, aceite, tomate y chía.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-cheese"></i> Tosta Capri</h3>
+        <span class="price">4,70€</span>
+        <p class="description">Tosta con queso de cabra, cebolla caramelizada, nueces y miel.</p>
+      </div>
+    </div>
+    
+    <div class="menu-category">
+      <h3>Pitufo/Viena</h3>
+    </div>
+    <div class="menu">
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Aceite</h3>
+        <span class="price">1,70€ / 2,70€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Aceite y Tomate</h3>
+        <span class="price">1,80€ / 2,80€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Mantequilla</h3>
+        <span class="price">1,70€ / 2,70€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Mantequilla y Mermelada</h3>
+        <span class="price">1,70€ / 2,70€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Zurrapa</h3>
+        <span class="price">2,10€ / 3,10€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Pate</h3>
+        <span class="price">2,10€ / 3,10€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Sobrasada</h3>
+        <span class="price">2,00€ / 3,00€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Lomo en Manteca</h3>
+        <span class="price">2,70€ / 3,70€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Pavo/Jamón Cocido</h3>
+        <span class="price">2,10€ / 3,10€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Serrano</h3>
+        <span class="price">2,40€ / 3,40€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Manchego</h3>
+        <span class="price">2,40€ / 3,40€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-fish"></i> Atún con Tomate</h3>
+        <span class="price">2,50€ / 3,50€</span>
+        <p class="description">Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-fish"></i> Atún Vegetal</h3>
+        <span class="price">2,80€ / 3,80€</span>
+        <p class="description">Atún, lechuga, tomate y mayonesa. Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bacon"></i> Bacon y Queso</h3>
+        <span class="price">2,70€ / 3,70€</span>
+        <p class="description">Bacon, queso y mayonesa. Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Mixto</h3>
+        <span class="price">2,50€ / 3,50€</span>
+        <p class="description">Jamón cocido, queso y mantequilla. Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Mixto Vegetal</h3>
+        <span class="price">2,80€ / 3,80€</span>
+        <p class="description">Jamón cocido, queso, lechuga, tomate y mayonesa. Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Catalana</h3>
+        <span class="price">2,60€ / 3,60€</span>
+        <p class="description">Jamón serrano, tomate y aceite. Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Catalana Manchego</h3>
+        <span class="price">2,90€ / 3,90€</span>
+        <p class="description">Jamón serrano, manchego, tomate y aceite. Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-egg"></i> Tortilla Francesa</h3>
+        <span class="price">2,80€ / 3,80€</span>
+        <p class="description">Tortilla francesa, lechuga, tomate y mayonesa. Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-egg"></i> Tortilla de Patata</h3>
+        <span class="price">3,00€ / 4,00€</span>
+        <p class="description">Tortilla de patata con mayonesa o alioli. Servido en pan Pitufo/Viena.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-cheese"></i> Mixto Manchego</h3>
+        <span class="price">2,70€ / 3,70€</span>
+        <p class="description">Jamón cocido, queso manchego y mantequilla. Servido en pan Pitufo/Viena.</p>
+      </div>
+    </div>
+    
+    <div class="menu-category">
+      <h3>Croissants</h3>
+    </div>
+    <div class="menu">
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-leaf"></i> Croissant Saludable</h3>
+        <span class="price">3,70€</span>
+        <p class="description">Croissant con aguacate, pavo, philadelphia y chía.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bacon"></i> Croissant Mixto</h3>
+        <span class="price">3,00€</span>
+        <p class="description">Croissant con jamón cocido y queso.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-bread-slice"></i> Croissant Mantequilla y Mermelada</h3>
+        <span class="price">2,70€</span>
+        <p class="description">Croissant con mantequilla y mermelada.</p>
+      </div>
+    </div>
+    
+    <div class="menu-category">
+      <h3>Bebidas</h3>
+    </div>
+    <div class="menu">
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-coffee"></i> Expresso</h3>
+        <span class="price">1,20€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-mug-hot"></i> Café pequeño</h3>
+        <span class="price">1,40€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-coffee"></i> Descafeinado sobre</h3>
+        <span class="price">1,60€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-coffee"></i> Americano</h3>
+        <span class="price">1,50€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-heart"></i> Bombón</h3>
+        <span class="price">1,90€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-mug-hot"></i> Té</h3>
+        <span class="price">1,40€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-coffee"></i> Capuchino</h3>
+        <span class="price">1,80€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-coffee"></i> Carajillo</h3>
+        <span class="price">2,00€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-coffee"></i> Café doble</h3>
+        <span class="price">1,60€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-mug-hot"></i> Colacao</h3>
+        <span class="price">2,00€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-glass-citrus"></i> Zumo Natural</h3>
+        <span class="price">2,30€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-glass-citrus"></i> Zumo</h3>
+        <span class="price">1,80€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-wine-bottle"></i> Puleva</h3>
+        <span class="price">2,00€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-wine-bottle"></i> Biofrutas</h3>
+        <span class="price">2,00€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-glass-martini-alt"></i> Refresco</h3>
+        <span class="price">2,20€</span>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-mug-hot"></i> Roibos</h3>
+        <span class="price">1,60€</span>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Ensaladas</h3>
+    </div>
+    <div class="menu">
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-salad"></i> Mixta</h3>
+        <span class="price">7,00€</span>
+        <p class="description">Lechuga, tomate, cebolla, atún, maíz y bocas de mar.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-leaf"></i> Cesar</h3>
+        <span class="price">8,50€</span>
+        <p class="description">Lechuga, pollo a la plancha, pan frito, queso parmesano y salsa cesar.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-cheese"></i> Cabrina</h3>
+        <span class="price">8,80€</span>
+        <p class="description">Lechuga, queso de cabra, pollo rebozado, bacon, nueces y salsa miel mostaza.</p>
+      </div>
+      <div class="menu-item initial-hidden">
+        <h3><i class="fas fa-fish"></i> Marinera</h3>
+        <span class="price">8,80€</span>
+        <p class="description">Lechuga, tomate, cebolla, atún, bocas de mar y salmón.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="trabaja-con-nosotros" class="work-with-us">
+    <h2 class="section-title" id="work-with-us-toggle">
+      Trabaja con Nosotros <i class="fas fa-chevron-down"></i>
+    </h2>
+    <div class="work-with-us-content initial-hidden">
+      <p>¿Te apasiona el mundo de la gastronomía y el buen servicio? En Piola Burguer Café buscamos personas con energía, creatividad y ganas de formar parte de nuestro equipo. Si te identificas con nuestra esencia "Piola", ¡nos encantaría conocerte!</p>
+      
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Cuéntanos sobre ti y tu experiencia:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="cv">Adjunta tu CV (PDF, DOCX):</label>
+          <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+        </div>
+        <input type="submit" value="Enviar Solicitud">
+      </form>
+      <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--gray-text);">Nos pondremos en contacto contigo si tu perfil encaja con nuestras necesidades.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2 class="section-title">Visítanos</h2>
+    <div class="contact-info">
+      <div class="contact-item initial-hidden">
+        <i class="fas fa-map-marker-alt"></i>
+        <h4>Dirección</h4>
+        <p>C. Villafuerte, 42<br>Málaga-Este, 29017 Málaga, España</p>
+      </div>
+      
+      <div class="contact-item initial-hidden">
+        <i class="fas fa-phone-alt"></i>
+        <h4>Teléfono</h4>
+        <p>+34 951 468 972</p>
+      </div>
+      
+      <div class="contact-item initial-hidden">
+        <i class="fas fa-clock"></i>
+        <h4>Horarios</h4>
+        <p><strong>Lunes a Jueves:</strong> 8:30 - 13:00 y 19:30 - 22:30<br>
+           <strong>Viernes:</strong> 8:30 - 13:00 y 20:00 - 23:00<br>
+           <strong>Sábados:</strong> 9:00 - 13:00 y 20:00 - 23:00<br>
+           <strong>Domingo:</strong> Cerrado</p>
+      </div>
+      
+      <div class="contact-item initial-hidden">
+        <i class="fas fa-envelope"></i>
+        <h4>Email</h4>
+        <p>reservas@piolaburguer.es</p>
+      </div>
+    </div>
+    
+    <a href="tel:+34951468972" class="cta-button">Hacer una Reserva</a>
+
+    </section>
+
+  <section id="reseñas" class="review-section">
+    <h2 class="section-title" id="review-toggle">
+      Deja tu Reseña <i class="fas fa-chevron-down"></i>
+    </h2>
+    <div class="review-section-content initial-hidden">
+      <p>Tu opinión es importante para nosotros. Ayúdanos a mejorar compartiendo tu experiencia en Piola Burguer Café.</p>
+      
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="review-name">Nombre:</label>
+          <input type="text" id="review-name" name="review-name" required>
+        </div>
+        <div class="form-group">
+          <label for="review-email">Correo electrónico:</label>
+          <input type="email" id="review-email" name="review-email" required>
+        </div>
+        <div class="form-group">
+          <label for="review-rating">Valoración:</label>
+          <select id="review-rating" name="review-rating" required>
+            <option value="">Selecciona una valoración</option>
+            <option value="5">5 Estrellas - Excelente</option>
+            <option value="4">4 Estrellas - Muy Bueno</option>
+            <option value="3">3 Estrellas - Bueno</option>
+            <option value="2">2 Estrellas - Regular</option>
+            <option value="1">1 Estrella - Malo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="review-text">Tu Reseña:</label>
+          <textarea id="review-text" name="review-text" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="review-photo">Adjunta una foto (opcional):</label>
+          <input type="file" id="review-photo" name="review-photo" accept="image/*">
+        </div>
+        <input type="submit" value="Enviar Reseña">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>Sobre Nosotros</h4>
+        <p>Piola Burguer Café es más que un restaurante, es una experiencia gastronómica que combina tradición e innovación en el corazón de Málaga.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/piolaburguercafe" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/piolaburguercafe?igsh=NXlsdmo0amtvcTFj" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@piolacafeburguer?_t=ZN-8wqM0MgRBvK&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Enlaces Rápidos</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Sobre Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#trabaja-con-nosotros">Trabaja con Nosotros</a>
+        <a href="#reseñas">Reseñas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Horarios</h4>
+        <p><strong>Lunes a Jueves:</strong> 8:30 - 13:00 y 19:30 - 22:30</p>
+        <p><strong>Viernes:</strong> 8:30 - 13:00 y 20:00 - 23:00</p>
+        <p><strong>Sábados:</strong> 9:00 - 13:00 y 20:00 - 23:00</p>
+        <p><strong>Domingo:</strong> Cerrado</p>
+      </div>
+      
+      <div class="footer-column">
+        <h4>Contacto</h4>
+        <p><i class="fas fa-map-marker-alt"></i> C. Villafuerte, 42, Málaga-Este, 29017 Málaga</p>
+        <p><i class="fas fa-phone-alt"></i> +34 951 468 972</p>
+        <p><i class="fas fa-envelope"></i> hola@piolaburguer.es</p>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>© 2023 Piola Burguer Café. Todos los derechos reservados. | Diseñado con <i class="fas fa-heart" style="color: #e74c3c;"></i> por nuestro equipo</p>
+    </div>
+  </footer>
+
+  <div id="discount-message" class="discount-message"></div>
+
+  <div id="prize-cups-container" class="prize-cups-container">
+    </div>
+
+  <script>
+    // Script JavaScript
+    document.querySelectorAll('nav a, .footer-column a').forEach(anchor => {
+      if(anchor.getAttribute('href').startsWith('#')) {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+            history.pushState(null, null, this.getAttribute('href'));
+          }
+        });
+      }
+    });
+    const animateOnScroll = (elements, animationClass) => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(animationClass);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+      });
+      elements.forEach(element => {
+        element.classList.add('initial-hidden');
+        observer.observe(element);
+      });
+    };
+    document.addEventListener('DOMContentLoaded', () => {
+      const animatedElements = document.querySelectorAll('.menu-item, .feature, .contact-item, .work-with-us, .review-section');
+      animateOnScroll(animatedElements, 'animate-visible');
+    });
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 100) {
+        nav.style.boxShadow = '0 4px 15px rgba(0,0,0,0.1)';
+        nav.style.background = 'rgba(255,255,255,0.95)';
+      } else {
+        nav.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
+        nav.style.background = '#fff';
+      }
+    });
+    document.getElementById('mobile-menu').addEventListener('click', function() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        });
+    });
+    document.getElementById('work-with-us-toggle').addEventListener('click', function() {
+      const content = this.nextElementSibling;
+      const icon = this.querySelector('i');
+      if (content.classList.contains('expanded')) {
+        content.classList.remove('expanded');
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+      } else {
+        content.classList.add('expanded');
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+      }
+    });
+    document.getElementById('review-toggle').addEventListener('click', function() {
+      const content = this.nextElementSibling;
+      const icon = this.querySelector('i');
+      if (content.classList.contains('expanded')) {
+        content.classList.remove('expanded');
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+      } else {
+        content.classList.add('expanded');
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+      }
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+      const workContent = document.querySelector('.work-with-us-content');
+      const workToggle = document.getElementById('work-with-us-toggle');
+      if (workContent && workToggle) {
+        workContent.classList.remove('expanded');
+        workToggle.querySelector('i').classList.add('fa-chevron-down');
+      }
+      const reviewContent = document.querySelector('.review-section-content');
+      const reviewToggle = document.getElementById('review-toggle');
+      if (reviewContent && reviewToggle) {
+        reviewContent.classList.remove('expanded');
+        reviewToggle.querySelector('i').classList.add('fa-chevron-down');
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const prizeCupsContainer = document.getElementById('prize-cups-container');
+        const discountMessage = document.getElementById('discount-message');
+        
+        const winningPrizes = [
+            { type: 'cafe-gratis', text: '¡Felicidades! Has ganado un CAFÉ GRATIS. Muestra esto al personal.' },
+            { type: 'zumo-naranja', text: '¡Enhorabuena! Has ganado un ZUMO DE NARANJA. Muestra esto al personal.' }
+        ];
+
+        const consolationPrize = {
+            type: 'sigue-participando', text: 'Sigue participando. ¡La próxima vez tendrás más suerte!'
+        };
+        
+        function showDiscountMessage(messageText, autoHide = false) {
+            discountMessage.innerHTML = `
+                <p>${messageText}</p>
+                ${autoHide ? '' : '<button id="close-discount-btn">Cerrar</button>'}
+            `;
+            discountMessage.classList.add('show');
+            if (autoHide) {
+                setTimeout(() => {
+                    discountMessage.classList.remove('show');
+                }, 3000);
+            } else {
+                document.getElementById('close-discount-btn').addEventListener('click', () => {
+                    discountMessage.classList.remove('show');
+                    resetPrizeGame();
+                });
+            }
+        }
+        
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function resetPrizeGame() {
+            prizeCupsContainer.style.display = 'none';
+            document.querySelectorAll('.hidden-gift-icon').forEach(icon => {
+                icon.style.pointerEvents = 'auto';
+                icon.style.opacity = '0.2';
+            });
+            prizeCupsContainer.innerHTML = '';
+        }
+
+        function placeHiddenGift() {
+            const possibleParents = Array.from(document.querySelectorAll('.menu-item, .feature'));
+            if (possibleParents.length > 0) {
+                const availableParents = possibleParents.filter(parent => !parent.querySelector('.hidden-gift-icon'));
+                if (availableParents.length > 0) {
+                    const randomIndex = Math.floor(Math.random() * availableParents.length);
+                    const chosenParent = availableParents[randomIndex];
+                    const hiddenGiftIcon = document.createElement('div');
+                    hiddenGiftIcon.className = 'hidden-gift-icon';
+                    hiddenGiftIcon.innerHTML = '<i class="fas fa-gift"></i>';
+                    chosenParent.appendChild(hiddenGiftIcon);
+                    
+                    hiddenGiftIcon.addEventListener('click', () => {
+                        hiddenGiftIcon.style.pointerEvents = 'none';
+                        hiddenGiftIcon.style.opacity = '0.5';
+
+                        let giftCount = localStorage.getItem('piolaGiftCounter');
+                        giftCount = giftCount ? parseInt(giftCount) + 1 : 1;
+                        localStorage.setItem('piolaGiftCounter', giftCount);
+
+                        const isPrizeTime = (giftCount % 100 === 0);
+                        
+                        showDiscountMessage('¡Has encontrado el desafío! Elige una taza para tu premio.', true);
+
+                        prizeCupsContainer.innerHTML = '';
+
+                        if (isPrizeTime) {
+                            const currentPrizes = shuffleArray([...winningPrizes]);
+                            currentPrizes.forEach(prize => {
+                                const cupDiv = document.createElement('div');
+                                cupDiv.className = 'cup-choice';
+                                cupDiv.dataset.prize = prize.type;
+                                cupDiv.innerHTML = '<i class="fas fa-mug-hot"></i>';
+                                cupDiv.addEventListener('click', function() {
+                                    showDiscountMessage(prize.text, false);
+                                    prizeCupsContainer.style.display = 'none';
+                                });
+                                prizeCupsContainer.appendChild(cupDiv);
+                            });
+                        } else {
+                            const cupDiv = document.createElement('div');
+                            cupDiv.className = 'cup-choice';
+                            cupDiv.dataset.prize = consolationPrize.type;
+                            cupDiv.innerHTML = '<i class="fas fa-mug-hot"></i>';
+                            cupDiv.addEventListener('click', function() {
+                                showDiscountMessage(consolationPrize.text, false);
+                                prizeCupsContainer.style.display = 'none';
+                            });
+                            prizeCupsContainer.appendChild(cupDiv);
+                        }
+                        
+                        prizeCupsContainer.style.display = 'flex';
+                    });
+                } else {
+                    console.warn('No hay suficientes elementos padre únicos para colocar todos los regalos.');
+                }
+            }
+        }
+        placeHiddenGift();
+    });
+  </script>
+</body>
+</html>
